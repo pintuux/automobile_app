@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <Link to="/"><h1>Garage Name</h1></Link>
+          <Link to="/" style={{textDecoration:'none'}}><h1>Gupta Auto Transmission</h1></Link>
           <nav>
             <Link to="/">Home</Link>
             <Link to="/about-us">About Us</Link>
