@@ -38,6 +38,7 @@ jobs:
         run: |
           ls -al frontend/build
 
+
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
