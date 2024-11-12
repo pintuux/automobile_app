@@ -1,0 +1,51 @@
+name: Deploy React App to Hostinger
+
+on:
+  push:
+    branches:
+      - master  # Change to your default branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print working directory
+        run: pwd
+
+      - name: List root directory contents for debugging
+        run: ls -al
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.17.0'  # Specify the Node.js version you are using
+
+      - name: Install dependencies
+        run: |
+          cd frontend
+          npm install
+
+      - name: Build React app
+        run: |
+          cd frontend
+          npm run build
+
+      - name: List build directory contents for debugging
+        run: |
+          ls -al frontend/build
+
+      - name: Deploy to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: frontend/build/  # Directory of your React build files
+          server-dir: ./
+          # Remote directory on Hostinger
+          # Skip cleanup to prevent deletion of non-existent directories
+
