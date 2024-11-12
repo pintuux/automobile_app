@@ -49,3 +49,4 @@ jobs:
           # Remote directory on Hostinger
           # Skip cleanup to prevent deletion of non-existent directories
 
+#hii pipelines are not supported in produnctions because they are not available in production
