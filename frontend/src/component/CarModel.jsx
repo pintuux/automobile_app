@@ -17,7 +17,7 @@ const CarModels = () => {
         {
             model: 'Porsche',
             image: '/porsche.jpeg',
-            description: 'Quality repair services for Jeep. Our team provides engine repair, brake replacement, and regular maintenance.',
+            description: 'We understand that Porsche owners demand the highest standards for their vehicles. Our expert technicians specialize in maintaining the performance, luxury, and precision engineering that Porsche is known for.',
           },
         {
           model: 'Jeep',
