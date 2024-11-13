@@ -1,17 +1,17 @@
-import React from 'react';
-
+// import React, { useState, useEffect } from 'react';
 import './styles.css';
+import ImageSlider from './ImageSlider';
 
-const  HomePage = () =>{
+const HomePage = () => {
+  
+
   return (
     <div className="hero text-center">
-      <div > 
-        <img src="/garage_image_103.jpg" className="front-image" alt="hero-image" />
-      </div>
+      <ImageSlider/>
+      
       <h2>Quality Auto Repair & Maintenance You Can Trust</h2>
-   
     </div>
   );
-}
+};
 
 export default HomePage;
