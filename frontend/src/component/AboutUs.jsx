@@ -11,10 +11,12 @@ function AboutUs() {
         <div className="team-member">
           <h4>John Doe</h4>
           <p>Mechanic</p>
+          <p className='fw-bold'>Expr: 7 Year+</p>
         </div>
         <div className="team-member">
           <h4>Jane Smith</h4>
           <p>Specialist</p>
+          <p className='fw-bold'>Expr: 5 Year+</p>
         </div>
         </div>
         <div className="team-member mb-1">
