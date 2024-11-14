@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Responsive styles for mobile view */
+@media (max-width: 992px) {
+  .navbar.d-lg-flex {
+    display: none; /* Hide the navbar on large screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar.d-lg-none {
+    display: none;
+    flex-direction: column;
+    background: #f8f9fa;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .navbar.open.d-lg-none {
+    display: flex; /* Show the dropdown navbar on mobile */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.25rem;
+  }
+}
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: lightgray;
+}
+
+.navbar {
+  background-color: #343a40;
 }
