@@ -9,11 +9,13 @@ function AboutUs() {
       <h3>Our Team</h3>
       <div className="team d-flex flex-wrap justify-content-around mb-2">
         <div className="team-member">
+          <img src="/gearbox_engineer.jpeg" alt="empty" />
           <h4>John Doe</h4>
           <p>Mechanic</p>
           <p className='fw-bold'>Expr: 7 Year+</p>
         </div>
         <div className="team-member">
+          <img src="/expert_eng.jpeg" alt="empty" />
           <h4>Jane Smith</h4>
           <p>Specialist</p>
           <p className='fw-bold'>Expr: 5 Year+</p>
