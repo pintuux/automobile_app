@@ -16,15 +16,15 @@ function Services() {
         <h2>Our Services</h2>
       </div>
       
-      <ul>
+      <div className='d-flex flex-wrap justify-content-center gap-4' >
         {services.map((service, index) => (
-          <li key={index}>
-            <h4>{service.name}</h4>
+          <div key={index} className='d-flex flex-column mb-4'>
+            <h4 style={{fontSize:'40px'}}>{service.name}</h4>
             <p>{service.description}</p>
-            <button>Get a Quote</button>
-          </li>
+            <button style={{width:'150px'}} >Get a Quote</button>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
