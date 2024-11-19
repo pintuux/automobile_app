@@ -47,7 +47,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: frontend/build/  # Directory of your React build files
           server-dir: ./
-          # Remote directory on Hostinger
-          # Skip cleanup to prevent deletion of non-existent directories
+          
 
-#hii pipelines are not supported in produnctions because they are not available in production

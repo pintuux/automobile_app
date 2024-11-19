@@ -40,9 +40,9 @@ function Services() {
       <div className='d-flex flex-wrap justify-content-center gap-4' >
         {services.map((service, index) => (
           <div key={index} className='d-flex flex-column mb-4 ms-4'>
-            <h4 style={{fontSize:'40px'}}>{service.name}</h4>
+            <h4 style={{fontSize:'40px'}} className='text-center'>{service.name}</h4>
             <p>{service.description}</p>
-            <button style={{width:'150px'}} >Get a Quote</button>
+            
           </div>
         ))}
       </div>
