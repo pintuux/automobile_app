@@ -5,7 +5,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'; // Example: Bra
 
 
 const FontWhatsapp = () => {
-    const phoneNumber = '97451822231';
+    const phoneNumber = '97470136605';
   return (
     <div className="position-fixed bottom-0 end-0 m-4">
       <a

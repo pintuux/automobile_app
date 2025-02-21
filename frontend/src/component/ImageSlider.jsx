@@ -6,7 +6,6 @@ const ImageSlider = () => {
     '/garage_image_106.jpg',
     '/garage_image_101.jpg',
     '/garage_image_102.jpg',
-    '/garage_image_103.jpg',
     '/garage_image_104.jpg',
     
     
